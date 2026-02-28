@@ -1,73 +1,23 @@
-# React + TypeScript + Vite
+# О проекте
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CRM Analytics Dashboard — это аналитическая панель для руководителей и менеджеров отдела продаж. Проект позволяет в реальном времени отслеживать ключевые бизнес-метрики: выручку, количество сделок, активность менеджеров и источники клиентов — всё в одном интерфейсе с наглядными графиками и фильтрами.
 
-Currently, two official plugins are available:
+# Функциональность
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dashboard — главная страница с KPI-карточками (выручка, сделки, клиенты, средний чек), графиком динамики выручки и распределением по каналам продаж. Поддерживается переключение периода: неделя / месяц / квартал / год.
+Sales (Продажи) — сравнение выручки по менеджерам, динамика количества сделок, таблица последних сделок с фильтрацией по менеджеру и статусу.
+Customers (Клиенты) — список клиентов с поиском, карточка клиента с историей покупок, топ-10 клиентов по выручке, фильтр по региону.
+Reports (Отчёты) — сводная таблица по месяцам, экспорт данных в CSV, фильтрация по периоду и каналу продаж.
+Settings — переключение светлой / тёмной темы.
 
-## React Compiler
+# About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+CRM Analytics Dashboard is an analytics panel for sales managers and team leads. It provides a clear overview of business performance: revenue, deals, manager activity, and customer sources — all in one place with interactive charts and filters.
 
-## Expanding the ESLint configuration
+# Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Dashboard — main page with KPI cards (revenue, deals, new customers, average check), revenue trend chart, and sales channel distribution. Supports period switching: week / month / quarter / year.
+Sales — revenue comparison by manager, deal count dynamics, recent deals table with filtering by manager and status.
+Customers — searchable customer list, customer card with purchase history, top-10 customers by revenue, region filter.
+Reports — monthly summary table, CSV data export, filtering by period and sales channel.
+Settings — light / dark theme toggle.
