@@ -1,0 +1,90 @@
+{
+  "managers": [
+    { "id": "m1", "name": "Алексей Воронов", "avatar": "AV", "region": "Москва", "email": "voronov@crm.ru", "phone": "+7 (916) 234-56-78" },
+    { "id": "m2", "name": "Мария Соколова", "avatar": "MS", "region": "Санкт-Петербург", "email": "sokolova@crm.ru", "phone": "+7 (921) 345-67-89" },
+    { "id": "m3", "name": "Дмитрий Козлов", "avatar": "DK", "region": "Москва", "email": "kozlov@crm.ru", "phone": "+7 (903) 456-78-90" },
+    { "id": "m4", "name": "Елена Новикова", "avatar": "EN", "region": "Новосибирск", "email": "novikova@crm.ru", "phone": "+7 (913) 567-89-01" },
+    { "id": "m5", "name": "Игорь Петров", "avatar": "IP", "region": "Екатеринбург", "email": "petrov@crm.ru", "phone": "+7 (922) 678-90-12" }
+  ],
+  "customers": [
+    { "id": "c1", "name": "ООО ТехноСфера", "contact": "Андрей Климов", "email": "klim@techno.ru", "phone": "+7 (495) 100-11-22", "region": "Москва", "channel": "Сайт", "totalRevenue": 485000, "lastDeal": "2026-02-10", "deals": 12 },
+    { "id": "c2", "name": "АО СтройГрупп", "contact": "Виктор Зайцев", "email": "zaitsev@stroy.ru", "phone": "+7 (812) 200-22-33", "region": "Санкт-Петербург", "channel": "Партнёры", "totalRevenue": 920000, "lastDeal": "2026-02-18", "deals": 24 },
+    { "id": "c3", "name": "ИП Орлова Н.В.", "contact": "Наталья Орлова", "email": "orlova@mail.ru", "phone": "+7 (383) 300-33-44", "region": "Новосибирск", "channel": "Звонки", "totalRevenue": 210000, "lastDeal": "2026-01-30", "deals": 7 },
+    { "id": "c4", "name": "ООО МедиаПро", "contact": "Сергей Лебедев", "email": "lebedev@media.ru", "phone": "+7 (343) 400-44-55", "region": "Екатеринбург", "channel": "Сайт", "totalRevenue": 670000, "lastDeal": "2026-02-22", "deals": 18 },
+    { "id": "c5", "name": "ЗАО АгроТрейд", "contact": "Людмила Фёдорова", "email": "fedorova@agro.ru", "phone": "+7 (495) 500-55-66", "region": "Москва", "channel": "Партнёры", "totalRevenue": 1150000, "lastDeal": "2026-02-25", "deals": 31 },
+    { "id": "c6", "name": "ООО ЦифраЛаб", "contact": "Павел Смирнов", "email": "smirnov@cifra.ru", "phone": "+7 (812) 600-66-77", "region": "Санкт-Петербург", "channel": "Сайт", "totalRevenue": 390000, "lastDeal": "2026-02-05", "deals": 9 },
+    { "id": "c7", "name": "АО РосЛогистик", "contact": "Ольга Кузнецова", "email": "kuznetsova@roslog.ru", "phone": "+7 (495) 700-77-88", "region": "Москва", "channel": "Звонки", "totalRevenue": 780000, "lastDeal": "2026-02-20", "deals": 22 },
+    { "id": "c8", "name": "ООО ПромТех", "contact": "Николай Васильев", "email": "vasiliev@promtech.ru", "phone": "+7 (913) 800-88-99", "region": "Новосибирск", "channel": "Партнёры", "totalRevenue": 540000, "lastDeal": "2026-01-25", "deals": 14 },
+    { "id": "c9", "name": "ИП Григорьев А.С.", "contact": "Александр Григорьев", "email": "grigoriev@gmail.com", "phone": "+7 (922) 900-99-00", "region": "Екатеринбург", "channel": "Сайт", "totalRevenue": 175000, "lastDeal": "2026-02-12", "deals": 5 },
+    { "id": "c10", "name": "ООО СофтВижн", "contact": "Татьяна Морозова", "email": "morozova@softvision.ru", "phone": "+7 (495) 111-22-33", "region": "Москва", "channel": "Партнёры", "totalRevenue": 1340000, "lastDeal": "2026-02-27", "deals": 38 },
+    { "id": "c11", "name": "АО ЭкоСтрой", "contact": "Роман Попов", "email": "popov@ecostroy.ru", "phone": "+7 (812) 222-33-44", "region": "Санкт-Петербург", "channel": "Звонки", "totalRevenue": 430000, "lastDeal": "2026-02-08", "deals": 11 },
+    { "id": "c12", "name": "ООО ДатаКор", "contact": "Ирина Волкова", "email": "volkova@datacor.ru", "phone": "+7 (383) 333-44-55", "region": "Новосибирск", "channel": "Сайт", "totalRevenue": 860000, "lastDeal": "2026-02-15", "deals": 20 }
+  ],
+  "deals": [
+    { "id": "d1", "customerId": "c2", "managerId": "m1", "amount": 120000, "status": "won", "channel": "Партнёры", "date": "2026-02-18", "product": "Лицензия Enterprise" },
+    { "id": "d2", "customerId": "c5", "managerId": "m2", "amount": 95000, "status": "won", "channel": "Партнёры", "date": "2026-02-25", "product": "Техподдержка Premium" },
+    { "id": "d3", "customerId": "c10", "managerId": "m3", "amount": 210000, "status": "won", "channel": "Партнёры", "date": "2026-02-27", "product": "Лицензия Enterprise" },
+    { "id": "d4", "customerId": "c7", "managerId": "m1", "amount": 75000, "status": "in_progress", "channel": "Звонки", "date": "2026-02-20", "product": "Лицензия Standard" },
+    { "id": "d5", "customerId": "c4", "managerId": "m4", "amount": 180000, "status": "won", "channel": "Сайт", "date": "2026-02-22", "product": "Интеграция API" },
+    { "id": "d6", "customerId": "c1", "managerId": "m2", "amount": 60000, "status": "lost", "channel": "Сайт", "date": "2026-02-10", "product": "Лицензия Standard" },
+    { "id": "d7", "customerId": "c12", "managerId": "m5", "amount": 145000, "status": "won", "channel": "Сайт", "date": "2026-02-15", "product": "Аналитика Pro" },
+    { "id": "d8", "customerId": "c3", "managerId": "m3", "amount": 42000, "status": "lost", "channel": "Звонки", "date": "2026-01-30", "product": "Лицензия Starter" },
+    { "id": "d9", "customerId": "c6", "managerId": "m1", "amount": 98000, "status": "in_progress", "channel": "Сайт", "date": "2026-02-05", "product": "Техподдержка Premium" },
+    { "id": "d10", "customerId": "c11", "managerId": "m4", "amount": 67000, "status": "won", "channel": "Звонки", "date": "2026-02-08", "product": "Лицензия Standard" },
+    { "id": "d11", "customerId": "c8", "managerId": "m2", "amount": 115000, "status": "in_progress", "channel": "Партнёры", "date": "2026-01-25", "product": "Интеграция API" },
+    { "id": "d12", "customerId": "c9", "managerId": "m5", "amount": 38000, "status": "won", "channel": "Сайт", "date": "2026-02-12", "product": "Лицензия Starter" },
+    { "id": "d13", "customerId": "c5", "managerId": "m3", "amount": 230000, "status": "won", "channel": "Партнёры", "date": "2026-01-20", "product": "Лицензия Enterprise" },
+    { "id": "d14", "customerId": "c10", "managerId": "m1", "amount": 88000, "status": "lost", "channel": "Партнёры", "date": "2026-01-15", "product": "Аналитика Pro" },
+    { "id": "d15", "customerId": "c2", "managerId": "m4", "amount": 195000, "status": "won", "channel": "Партнёры", "date": "2026-01-28", "product": "Лицензия Enterprise" },
+    { "id": "d16", "customerId": "c7", "managerId": "m2", "amount": 54000, "status": "won", "channel": "Звонки", "date": "2026-01-10", "product": "Лицензия Standard" },
+    { "id": "d17", "customerId": "c4", "managerId": "m5", "amount": 76000, "status": "in_progress", "channel": "Сайт", "date": "2026-02-24", "product": "Техподдержка Premium" },
+    { "id": "d18", "customerId": "c1", "managerId": "m3", "amount": 130000, "status": "won", "channel": "Сайт", "date": "2025-12-18", "product": "Интеграция API" },
+    { "id": "d19", "customerId": "c12", "managerId": "m1", "amount": 165000, "status": "won", "channel": "Сайт", "date": "2025-12-05", "product": "Аналитика Pro" },
+    { "id": "d20", "customerId": "c6", "managerId": "m4", "amount": 49000, "status": "lost", "channel": "Сайт", "date": "2025-11-22", "product": "Лицензия Starter" },
+    { "id": "d21", "customerId": "c3", "managerId": "m5", "amount": 88000, "status": "won", "channel": "Звонки", "date": "2025-11-14", "product": "Лицензия Standard" },
+    { "id": "d22", "customerId": "c5", "managerId": "m1", "amount": 310000, "status": "won", "channel": "Партнёры", "date": "2025-11-03", "product": "Лицензия Enterprise" },
+    { "id": "d23", "customerId": "c9", "managerId": "m2", "amount": 44000, "status": "lost", "channel": "Сайт", "date": "2025-10-29", "product": "Лицензия Starter" },
+    { "id": "d24", "customerId": "c11", "managerId": "m3", "amount": 99000, "status": "won", "channel": "Звонки", "date": "2025-10-17", "product": "Техподдержка Premium" },
+    { "id": "d25", "customerId": "c2", "managerId": "m5", "amount": 250000, "status": "won", "channel": "Партнёры", "date": "2025-10-08", "product": "Лицензия Enterprise" },
+    { "id": "d26", "customerId": "c8", "managerId": "m4", "amount": 72000, "status": "in_progress", "channel": "Партнёры", "date": "2025-09-25", "product": "Лицензия Standard" },
+    { "id": "d27", "customerId": "c10", "managerId": "m1", "amount": 185000, "status": "won", "channel": "Партнёры", "date": "2025-09-12", "product": "Аналитика Pro" },
+    { "id": "d28", "customerId": "c7", "managerId": "m2", "amount": 63000, "status": "won", "channel": "Звонки", "date": "2025-09-03", "product": "Лицензия Standard" },
+    { "id": "d29", "customerId": "c4", "managerId": "m3", "amount": 140000, "status": "lost", "channel": "Сайт", "date": "2025-08-20", "product": "Интеграция API" },
+    { "id": "d30", "customerId": "c1", "managerId": "m5", "amount": 95000, "status": "won", "channel": "Сайт", "date": "2025-08-11", "product": "Техподдержка Premium" }
+  ],
+  "revenue": [
+    { "id": 1, "month": "Март 2025", "monthKey": "2025-03", "revenue": 620000, "deals": 18, "newCustomers": 3, "avgCheck": 34444, "channels": { "Сайт": 210000, "Партнёры": 280000, "Звонки": 130000 } },
+    { "id": 2, "month": "Апрель 2025", "monthKey": "2025-04", "revenue": 745000, "deals": 21, "newCustomers": 4, "avgCheck": 35476, "channels": { "Сайт": 290000, "Партнёры": 310000, "Звонки": 145000 } },
+    { "id": 3, "month": "Май 2025", "monthKey": "2025-05", "revenue": 580000, "deals": 16, "newCustomers": 2, "avgCheck": 36250, "channels": { "Сайт": 200000, "Партнёры": 240000, "Звонки": 140000 } },
+    { "id": 4, "month": "Июнь 2025", "monthKey": "2025-06", "revenue": 910000, "deals": 26, "newCustomers": 5, "avgCheck": 35000, "channels": { "Сайт": 340000, "Партнёры": 390000, "Звонки": 180000 } },
+    { "id": 5, "month": "Июль 2025", "monthKey": "2025-07", "revenue": 670000, "deals": 19, "newCustomers": 3, "avgCheck": 35263, "channels": { "Сайт": 245000, "Партнёры": 275000, "Звонки": 150000 } },
+    { "id": 6, "month": "Август 2025", "monthKey": "2025-08", "revenue": 830000, "deals": 23, "newCustomers": 4, "avgCheck": 36087, "channels": { "Сайт": 310000, "Партнёры": 350000, "Звонки": 170000 } },
+    { "id": 7, "month": "Сентябрь 2025", "monthKey": "2025-09", "revenue": 995000, "deals": 28, "newCustomers": 6, "avgCheck": 35536, "channels": { "Сайт": 370000, "Партнёры": 420000, "Звонки": 205000 } },
+    { "id": 8, "month": "Октябрь 2025", "monthKey": "2025-10", "revenue": 1120000, "deals": 31, "newCustomers": 5, "avgCheck": 36129, "channels": { "Сайт": 410000, "Партнёры": 480000, "Звонки": 230000 } },
+    { "id": 9, "month": "Ноябрь 2025", "monthKey": "2025-11", "revenue": 1340000, "deals": 37, "newCustomers": 7, "avgCheck": 36216, "channels": { "Сайт": 490000, "Партнёры": 580000, "Звонки": 270000 } },
+    { "id": 10, "month": "Декабрь 2025", "monthKey": "2025-12", "revenue": 1580000, "deals": 44, "newCustomers": 8, "avgCheck": 35909, "channels": { "Сайт": 580000, "Партнёры": 680000, "Звонки": 320000 } },
+    { "id": 11, "month": "Январь 2026", "monthKey": "2026-01", "revenue": 980000, "deals": 27, "newCustomers": 4, "avgCheck": 36296, "channels": { "Сайт": 360000, "Партнёры": 420000, "Звонки": 200000 } },
+    { "id": 12, "month": "Февраль 2026", "monthKey": "2026-02", "revenue": 1210000, "deals": 33, "newCustomers": 5, "avgCheck": 36667, "channels": { "Сайт": 445000, "Партнёры": 520000, "Звонки": 245000 } }
+  ],
+  "manager_stats": [
+    { "id": "m1", "managerId": "m1", "name": "Алексей Воронов", "totalRevenue": 1863000, "dealsWon": 28, "dealsLost": 6, "dealsInProgress": 4, "avgCheck": 66536, "conversionRate": 78 },
+    { "id": "m2", "managerId": "m2", "name": "Мария Соколова", "totalRevenue": 1540000, "dealsWon": 23, "dealsLost": 5, "dealsInProgress": 3, "avgCheck": 66957, "conversionRate": 82 },
+    { "id": "m3", "managerId": "m3", "name": "Дмитрий Козлов", "totalRevenue": 1290000, "dealsWon": 19, "dealsLost": 7, "dealsInProgress": 2, "avgCheck": 67895, "conversionRate": 73 },
+    { "id": "m4", "managerId": "m4", "name": "Елена Новикова", "totalRevenue": 1125000, "dealsWon": 17, "dealsLost": 4, "dealsInProgress": 3, "avgCheck": 66176, "conversionRate": 81 },
+    { "id": "m5", "managerId": "m5", "name": "Игорь Петров", "totalRevenue": 935000, "dealsWon": 14, "dealsLost": 5, "dealsInProgress": 2, "avgCheck": 66786, "conversionRate": 74 }
+  ],
+  "kpi": [
+    {
+      "id": "current",
+      "period": "Февраль 2026",
+      "totalRevenue": 1210000,
+      "totalDeals": 33,
+      "newCustomers": 5,
+      "avgCheck": 36667,
+      "revenueGrowth": 23.5,
+      "dealsGrowth": 22.2,
+      "customersGrowth": 25.0,
+      "avgCheckGrowth": 1.0
+    }
+  ]
+}
