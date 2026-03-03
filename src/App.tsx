@@ -1,7 +1,7 @@
-import { AreaChartComponent } from './Components/AreaChart/AreaChart'
-import { BarChartComponent } from './Components/BarChart/BarChart'
-import { LineChartComponent } from './Components/LineChart/LineChart'
-import { PieChartComponent } from './Components/PieChart/PieChart'
+import { AreaChartComponent } from './Components/Charts/AreaChart/AreaChart'
+import { BarChartComponent } from './Components/Charts/BarChart/BarChart'
+import { LineChartComponent } from './Components/Charts/LineChart/LineChart'
+import { PieChartComponent } from './Components/Charts/PieChart/PieChart'
 
 function App() {
   return (
