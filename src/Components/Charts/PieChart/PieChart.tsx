@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Pie, PieChart, Tooltip } from 'recharts'
+import { Pie, PieChart, Tooltip, type TooltipProps } from 'recharts'
+import cl from './customTooltip.module.css'
+import type {
+  NameType,
+  ValueType,
+} from 'recharts/types/component/DefaultTooltipContent'
 
 export const PieChartComponent = () => {
   const [data, setData] = useState<any>(null)
@@ -64,7 +69,26 @@ export const PieChartComponent = () => {
         nameKey="name"
         innerRadius="50%"
       />
-      <Tooltip />
+      {/* @ts-ignore */}
+      <Tooltip content={<CustomTooltip />} />
     </PieChart>
   )
+}
+
+interface ICustomToolip {
+  active: any
+  payload: any
+  label: any
+}
+
+const CustomTooltip = ({ active, payload }: ICustomToolip) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={cl.container}>
+        <p className={cl.textLabel}>{payload[0].name}</p>
+        <p className={cl.textPayload}>{payload[0].value}</p>
+      </div>
+    )
+  }
+  return null
 }
