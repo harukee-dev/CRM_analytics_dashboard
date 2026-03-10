@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Pie, PieChart, Tooltip, type TooltipProps } from 'recharts'
+import { Pie, PieChart, Tooltip } from 'recharts'
 import cl from './customTooltip.module.css'
-import type {
-  NameType,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent'
 
 export const PieChartComponent = () => {
   const [data, setData] = useState<any>(null)
