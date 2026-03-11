@@ -57,12 +57,13 @@ export const PieChartComponent = () => {
   if (!data) return <p>loading</p>
 
   return (
-    <PieChart width={800} height={600}>
+    <PieChart width={400} height={400}>
       <Pie
         fill="#3af65057"
         data={data}
         dataKey="value"
         nameKey="name"
+        label
         innerRadius="50%"
       />
       {/* @ts-ignore */}

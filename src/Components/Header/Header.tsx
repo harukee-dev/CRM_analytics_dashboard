@@ -6,7 +6,7 @@ export const Header = () => {
   const navigate = useNavigate()
 
   const handleNavigate = (link: string): void => {
-    navigate(`http://localhost:5173/${link}`)
+    navigate(`/${link}`)
   }
 
   return (
