@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react'
 import { Pie, PieChart, Tooltip } from 'recharts'
 import cl from './customTooltip.module.css'
+import { useAppSelector } from '../../../store/hooks/redux'
 
 export const PieChartComponent = () => {
   const [data, setData] = useState<any>(null)
-  const [interval, setInterval] = useState<'month' | 'quarter' | 'year'>(
-    'month',
-  )
+
+  const { time_interval } = useAppSelector((state) => state.timeIntervalReducer)
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('http://localhost:3001/revenue')
       const json = await response.json()
 
-      if (interval == 'month') {
+      if (time_interval == 'month') {
         const lastMonth = json[json.length - 1]
 
         const channels = Object.entries(lastMonth.channels).map(
@@ -26,7 +26,7 @@ export const PieChartComponent = () => {
         setData(channels)
       } else {
         const lastMonths =
-          interval == 'quarter'
+          time_interval == 'quarter'
             ? json.slice(json.length - 4, json.length - 1)
             : json
         const channelsSum: Record<string, number> = {}
@@ -52,7 +52,7 @@ export const PieChartComponent = () => {
     }
 
     fetchData()
-  }, [interval])
+  }, [time_interval])
 
   if (!data) return <p>loading</p>
 
