@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+  width: 29vw;
+  height: 29vw;
+  border-radius: 3vh;
+  position: relative;
+}
+
+.title {
+  /* align-self: flex-start; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3.25vh;
+  color: rgb(191, 191, 191);
+  position: absolute;
+}
